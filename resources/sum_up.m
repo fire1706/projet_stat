@@ -5,8 +5,8 @@ function [mean_x, median_x, std_x] = sum_up(x)
 %   MEAN_X : 1-by-1 double
 %   MEDIAN_X : 1-by-1 double
 %   STD_X : 1-by-1 double
-
-%%Dans x ins?rer les charges
+%%
+%Dans x ins?rer les charges
 
 mean_x  = mean(x);
 
