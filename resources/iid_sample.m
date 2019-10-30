@@ -5,6 +5,7 @@ function sample = iid_sample(x, size)
 %   SIZE : 1-by-1 integer
 %   SAMPLE : SIZE-by-P table
 
+ 
 
 
 end
