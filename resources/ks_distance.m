@@ -5,6 +5,6 @@ function dist = ks_distance(x, y)
 %   Y : M-by-1 double
 %   DIST : 1-by-1 double
 
-
+[a,b,dist] = kstest2(x,y);
 
 end

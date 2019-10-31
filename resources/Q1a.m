@@ -1,7 +1,7 @@
 % script de la question 1a
 
 populas = population(readtable('data.csv'),24);
-writetable(pop,'populas.csv');
+
 % on sort la population 
 %on donne un intervall de donn?e
 maximum = max(populas.Charges(:,1))
