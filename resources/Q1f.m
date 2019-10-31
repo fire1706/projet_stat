@@ -10,11 +10,11 @@ i = 1;
 h = 1;
 f = 1;
 while(i<500)
-    if(Pop.Sex(i) == 1)
+    if(Pop.Sex(i) == 0)
         Homme(h,1) = Pop.Age(i);
         Homme(h,2) = Pop.Charges(i);
         h = h+1;
-    elseif(Pop.Sex(i) == 0)
+    elseif(Pop.Sex(i) == 1)
         Femme(f,1) = Pop.Age(i);
         Femme(f,2) = Pop.Charges(i);
         f = f+1;
