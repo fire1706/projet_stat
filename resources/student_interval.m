@@ -13,7 +13,7 @@ alpha = 1.96; % car on consid?re l'interval 95%
 Sn1 = 0;
 i = 1;
 while(i<=n)
-    Sn1 = Sn1 + (x(i,1)-meanG)*(x(i,1)-meanG);
+    Sn1 = Sn1 + (x(1,i)-meanG)*(x(1,i)-meanG);
     i = i+1;
 end
 Sn1 = Sn1/(n-1);

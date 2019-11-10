@@ -10,8 +10,9 @@ upgauss = zeros(100,1);
 i =1;
 while(i<=100)
     Bmisample(i,:) = iid_sample(X,50);
-    [Lowstut(i,1),upstut(i,1)] = student_interval(Bmisample(i,:),0.95)
-    [Lowgauss(i,1),upgauss(i,1)] = gauss_interval(Bmisample(i,:),0.95);
+    meanBMI(i,1) = mean(Bmisample(i,:));
+    [Lowstut(i,1),upstut(i,1)] = stutdent_interval(meanBMI(i,1),0.95);
+    [Lowgauss(i,1),upgauss(i,1)] = gauss_interval(meanBMI(i,1),0.95);
     i = i+1;
 end
 
@@ -20,17 +21,16 @@ cptgauss =0;
 i = 1;
 
 while(i<=100)
-    if( meanG<upstut(i,1) && meanG>Lowstut(i,1) )
+    if( meanG < upstut || meanG > Lowstut )
         cptstut = cptstut+1;
     end
-    if( meanG<upgauss(i,1) && meanG>Lowgauss(i,1) )
+    if( meanG < upgauss || meanG > Lowgauss )
         cptgauss = cptgauss+1;
     end
     i = i+1;
 end
 
-prcstut = cptstut/100;
-prcgauss = cptgauss/100;
+
 
 
 
