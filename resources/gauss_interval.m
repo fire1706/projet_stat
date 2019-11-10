@@ -6,7 +6,12 @@ function [lower_bound, upper_bound] = gauss_interval(x, perc)
 %   PERC : 1-by-1 double in [0, 1]
 %   LOWER_BOUND : 1-by-1 double
 %   UPPER_BOUND : 1-by-1 double
+meanG = mean(x);
+n = length(x);
+alpha = 1.96; % car on consid?re l'interval 95%
+varG = var(x,1);
 
-
+lower_bound = meanG - alpha*varG/sqrt(n);
+upper_bound = meanG + alpha*varG/sqrt(n);
 
 end
