@@ -24,7 +24,14 @@ end
 
 figure;
 scatter(Homme(:,1),Homme(:,2))
+title('Corrélation âge/frais (hommes)');
+xlabel('Age (années)');
+ylabel('Frais ($)');
 figure;
 scatter(Femme(:,1),Femme(:,2))
+title('Corrélation âge/frais (femmes)');
+xlabel('Age (années)');
+ylabel('Frais ($)');
+
 
             
