@@ -8,10 +8,11 @@ function [lower_bound, upper_bound] = gauss_interval(x,sigma ,perc)
 %   UPPER_BOUND : 1-by-1 double
 meanG = mean(x);
 n = length(x);
-alpha = 1.96; % car on consid?re l'interval 95%
+alpha = 1-perc;
+ua = norminv([alpha/2, 1-alpha/2]);
+ua = ua(2); %Le premier terme est négatif et l'opposé du second. Cf doc de norminv.
 
-
-lower_bound = meanG - alpha*sigma/sqrt(n);
-upper_bound = meanG + alpha*sigma/sqrt(n);
+lower_bound = meanG - ua*sigma/sqrt(n);
+upper_bound = meanG + ua*sigma/sqrt(n);
 
 end
