@@ -6,7 +6,7 @@ function [multi_median,mean_of_multiMedian] = Q2Bii(X) % X est la matrice compre
         multi_median(i,1) = median(X(i,:));
         i = i + 1;
     end
-    histogram(multi_median);
+    histogram(multi_median,21);
     mean_of_multiMedian = mean(multi_median);
     
 end

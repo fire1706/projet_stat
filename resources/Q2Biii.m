@@ -6,7 +6,7 @@ function [multi_std,mean_of_multistd] = Q2Biii(X) % X est la matrice comprenant 
         multi_std(i,1) = std(X(i,:));
         i = i + 1;
     end
-    histogram(multi_std);
+    histogram(multi_std,21);
     mean_of_multistd = mean(multi_std);
     
 end

@@ -7,5 +7,5 @@ function [dst] = Q2Biv(X,Y) % X est la matrice comprenant les 500 ?chatillons et
         [a,b,dst(i,1)] = kstest2(X(i,:),Y);
         i = i + 1;
     end
-    histogram(dst);
+    histogram(dst,21);
 end

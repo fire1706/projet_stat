@@ -6,7 +6,7 @@ function [multi_mean,mean_of_multiMean] = Q2Bi(X) % X est la matrice comprenant 
         multi_mean(i,1) = mean(X(i,:));
         i = i + 1;
     end
-    histogram(multi_mean);
+    histogram(multi_mean,21);
     mean_of_multiMean = mean(multi_mean);
     
 end
