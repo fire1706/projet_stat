@@ -9,7 +9,7 @@ function [lower_bound, upper_bound] = student_interval(x, perc)
 
 meanG = mean(x);
 n = length(x);
-alpha = 1.96; % car on consid?re l'interval 95%
+t = tinv(perc, n-1);
 Sn1 = 0;
 i = 1;
 while(i<=n)
@@ -19,8 +19,8 @@ end
 Sn1 = Sn1/(n-1);
 Sn1 = sqrt(Sn1);
 
-lower_bound = meanG - alpha*Sn1/sqrt(n);
-upper_bound = meanG + alpha*Sn1/sqrt(n);
+lower_bound = meanG - t*Sn1/sqrt(n);
+upper_bound = meanG + t*Sn1/sqrt(n);
 
 
 end
