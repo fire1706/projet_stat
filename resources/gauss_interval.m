@@ -1,4 +1,4 @@
-function [lower_bound, upper_bound] = gauss_interval(x, perc)
+function [lower_bound, upper_bound] = gauss_interval(x,sigma ,perc)
 %   GAUSS_INTERVAL(X, PERC) computes the lower and upper bounds of the 100*PERC percent Gauss confidence interval
 %   of X's distribution mean.
 %
@@ -9,9 +9,9 @@ function [lower_bound, upper_bound] = gauss_interval(x, perc)
 meanG = mean(x);
 n = length(x);
 alpha = 1.96; % car on consid?re l'interval 95%
-varG = var(x,1);
 
-lower_bound = meanG - alpha*varG/sqrt(n);
-upper_bound = meanG + alpha*varG/sqrt(n);
+
+lower_bound = meanG - alpha*sigma/sqrt(n);
+upper_bound = meanG + alpha*sigma/sqrt(n);
 
 end
