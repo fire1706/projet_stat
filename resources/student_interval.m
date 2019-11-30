@@ -18,6 +18,7 @@ while(i<=n)
 end
 Sn1 = Sn1/(n-1);
 Sn1 = sqrt(Sn1);
+Sn1
 
 lower_bound = meanG - t*Sn1/sqrt(n);
 upper_bound = meanG + t*Sn1/sqrt(n);
