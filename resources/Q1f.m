@@ -1,6 +1,6 @@
 %% Script pour la question 1 f)
-% r?alisation des scatterplot
-% on va d'abord cr?e les deux table homme femme
+% realisation des scatterplot
+% on va d'abord cree les deux table homme femme
 Pop = population(readtable('data.csv'), 24);
 
 Homme = zeros(2,2);
@@ -24,13 +24,13 @@ end
 
 figure;
 scatter(Homme(:,1),Homme(:,2))
-title('Corrélation âge/frais (hommes)');
-xlabel('Age (années)');
+title('Corr?lation ?ge/frais (hommes)');
+xlabel('Age (ann?es)');
 ylabel('Frais ($)');
 figure;
 scatter(Femme(:,1),Femme(:,2))
-title('Corrélation âge/frais (femmes)');
-xlabel('Age (années)');
+title('Corr?lation ?ge/frais (femmes)');
+xlabel('Age (ann?es)');
 ylabel('Frais ($)');
 
 

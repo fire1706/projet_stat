@@ -1,4 +1,4 @@
-%% ce fichier ne sert qu'a initie toute les variables utiles
+%% ce fichier ne sert qu'a initie toute les variables utiles lors de l'appelle des autres fonction
 populas = population(readtable('data.csv'),24);
 LastName = populas.LastName
 Age = populas.Age
