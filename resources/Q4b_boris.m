@@ -14,7 +14,7 @@ var_charges = var(pop.Charges);
 var_charges_smoker = var(pop_smoker.Charges);
 var_charges_healthy = var(pop_healthy.Charges);
 
-X = avg_charges_smoker - avg_charges_healthy;
+X = 22973; %Voir a)
 nb_tests_ok = 0;
 n_tests = 100;
 
