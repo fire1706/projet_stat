@@ -8,8 +8,8 @@ function [meanBMI,medianBMI,meanBiais,medianBiais,meanVariance,medianVariance] =
 
 %%
 %Q3
-meanG = mean(X)
-medianG = median(X)
+meanG = mean(X);
+medianG = median(X);
 Bmisample = zeros(100,50);
 i =1;
 while(i<=100)
