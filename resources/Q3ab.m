@@ -22,7 +22,7 @@ end
 %% partie A
 meanBiais =  mean(meanBMI - meanG);
 meanVariance = var(meanBMI,1);
-V = mean((meanBMI-meanG).^2) - (meanBiais)^2; % formule pour etre sur voir si on la garde ou si on garde l'autre
+V = mean((meanBMI-meanG).^2) - (meanBiais)^2; % formule pour etre sur d'avoir bien utiliser var();
 
 
 %% parie B
