@@ -6,7 +6,7 @@ function sample = iid_sample(x, size)
 %   SAMPLE : SIZE-by-P table
  
 
-sample = randsample(x,size);
+sample = randsample(x,size, true);
 
 
 end
