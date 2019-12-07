@@ -1,6 +1,8 @@
 function proportion = Q1c(x)
 %% Fonction calculant la proportion de personne ayant des frais normaux
-%% On d?fini d'abord l'interval
+% Proportion 1-by-1 , c'est un pourcentage
+% x 500-by-1 vecteur des Charges
+%% On defini d'abord l'interval
 [a,b] = normal_interval(x);
 %% On recherche maintenant la proportion
 i = 1;

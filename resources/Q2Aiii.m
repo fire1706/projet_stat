@@ -1,8 +1,9 @@
-%% fonction utilis? pour cr?e les cdfplot population et ?chantillon a but de comparaison
+%% fonction utilise pour cree les cdfplot population et echantillon a but de comparaison
 function fin = Q2Aiii(X,Y)
-% X est N by 1 et repr?sente la population totale
-% Y est n by 1 et repr?sente un ?chantillon de la population
+% X est N-by-1 et represente la population totale
+% Y est n-by-1 et represente un echantillon de la population
 % n < N
+% fin est une variable vide/null
 
 figure;
 cdfplot(X)

@@ -1,5 +1,6 @@
-%% function qui va cr?e les 500 distance de kolmogorov de tout les ?chantillons
-function [dst] = Q2Biv(X,Y) % X est la matrice comprenant les 500 ?chatillons et Y la populationd de base
+%% function qui va cree les 500 distance de kolmogorov de tout les echantillons
+function [dst] = Q2Biv(X,Y) 
+% X est la matrice comprenant les 500 echatillons et Y la population de base, dst est le vecteur des distance de kolmogorov
     dst = zeros(500,1);
     i = 1;
     while(i<=500)

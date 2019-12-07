@@ -1,3 +1,9 @@
+%% Cette fonction a pour but de calculer pour des echantillons le pourcentage de ceux-ci qui contienne dans leur intervalle de gauss ou de student la moyenne 
+% des charges de la population 
+% X is 500-BY-1 et represente le vecteur des Charges de la population
+% prcstut et prcgauss represente le pourcentage d'echantillon qui contienne
+% la moyenne dans leur intervalle de stutdent ou de gauss
+
 function [prcstut,prcgauss] = Q3d(X)
 
 meanG = mean(X)
